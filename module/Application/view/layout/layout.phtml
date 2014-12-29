@@ -51,12 +51,12 @@ if ($this->bodyId) {
             <div class="six mobile-two columns" id="menu">
                 <nav class="top-bar">
                     <ul>
-                        <li class="name show-for-small">Menu</li>
+                        <li class="name show-for-small">菜单</li>
                         <li class="toggle-topbar show-for-small"><a href="#"></a></li>
-                        <li<?php echo ($this->active == 'about' ? ' class="active"' : ''); ?>><a href="<?php echo $this->url('about') ?>">About</a></li>
-                        <li<?php echo ($this->active == 'learn' ? ' class="active"' : ''); ?>><a href="<?php echo $this->url('learn') ?>">Learn</a></li>
-                        <li<?php echo ($this->active == 'start' ? ' class="active"' : ''); ?>><a href="<?php echo $this->url('downloads') ?>">Get Started</a></li>
-                        <li<?php echo ($this->active == 'participate' ? ' class="active"' : ''); ?>><a href="<?php echo $this->url('participate') ?>">Participate</a></li>
+                        <li<?php echo ($this->active == 'about' ? ' class="active"' : ''); ?>><a href="<?php echo $this->url('about') ?>">关于我们</a></li>
+                        <li<?php echo ($this->active == 'learn' ? ' class="active"' : ''); ?>><a href="<?php echo $this->url('learn') ?>">学习</a></li>
+                        <li<?php echo ($this->active == 'start' ? ' class="active"' : ''); ?>><a href="<?php echo $this->url('downloads') ?>">用户向导</a></li>
+                        <li<?php echo ($this->active == 'participate' ? ' class="active"' : ''); ?>><a href="<?php echo $this->url('participate') ?>">框架支持</a></li>
                         <li class="show-for-small">
                             <!-- Search form for small screens -->
                             <form method="get" action="//www.google.com/search<?php // echo $this->url('search') ?>" target="_blank">
@@ -107,61 +107,61 @@ if ($this->bodyId) {
         <footer id="footer">
             <div class="row">
                 <div class="two mobile-two columns">
-                    <h4>About</h4>
+                    <h4>关于我们</h4>
                     <ul>
-                        <li class="link-highlight"><a href="<?php echo $this->url('about') ?>">Overview</a></li>
-                        <li><a href="<?php echo $this->url('about/faq') ?>">ZF2 FAQ</a></li>
-                        <li><a href="<?php echo $this->url('about/faq-v1') ?>">ZF1 FAQ</a></li>
+                        <li class="link-highlight"><a href="<?php echo $this->url('about') ?>">概述</a></li>
+                        <li><a href="<?php echo $this->url('about/faq') ?>">ZF2常见问题解答</a></li>
+                        <li><a href="<?php echo $this->url('about/faq-v1') ?>">ZF1常见问题解答</a></li>
 
                         <?php /*
                           <li><a href="">Case Studies</a></li>
                           <li><a href="">By the Numbers</a></li>
                          */ ?>
-                        <li><a href="<?php echo $this->url('security') ?>">Security</a></li>
-                        <li><a href="<?php echo $this->url('changelog') ?>">Changelog</a></li>
-                        <li><a href="<?php echo $this->url('phly-blog/index') ?>">Blog</a></li>
+                        <li><a href="<?php echo $this->url('security') ?>">安全</a></li>
+                        <li><a href="<?php echo $this->url('changelog') ?>">更新日志</a></li>
+                        <li><a href="<?php echo $this->url('phly-blog/index') ?>">博客</a></li>
                     </ul>
                 </div>
 
                 <div class="two mobile-two columns">
-                    <h4>Learn</h4>
+                    <h4>学习</h4>
                     <ul>
-                        <li><a href="<?php echo $this->manualUrl('user-guide/overview.html', 'en', '2.3') ?>">User Guide</a></li>
-                        <li><a href="<?php echo $this->manualUrl('index.html', 'en', '2.3') ?>">Reference Guide</a></li>
+                        <li><a href="<?php echo $this->manualUrl('user-guide/overview.html', 'en', '2.3') ?>">用户指南</a></li>
+                        <li><a href="<?php echo $this->manualUrl('index.html', 'en', '2.3') ?>">参考指南</a></li>
                         <li><a href="<?php echo $this->url('docs/api') ?>">APIs</a></li>
                         <!--              <li><a href="">Webinars</a></li>-->
-                        <li><a href="<?php echo $this->url('learn/training-and-certification') ?>">Training &amp; Certification</a></li>
-                        <li><a href="<?php echo $this->url('learn/support-and-consulting') ?>">Support &amp; Consulting</a></li>
+                        <li><a href="<?php echo $this->url('learn/training-and-certification') ?>">培训 &amp; 认证</a></li>
+                        <li><a href="<?php echo $this->url('learn/support-and-consulting') ?>">支持 &amp; 咨询</a></li>
                     </ul>
                 </div>
 
                 <hr>
 
                 <div class="two mobile-two columns">
-                    <h4>Get Started</h4>
+                    <h4>用户向导</h4>
                     <ul>
-                        <li><a href="<?php echo $this->url('downloads') ?>">Downloads</a></li>
-                        <li><a href="<?php echo $this->url('downloads', array('action' => 'skeleton-app')) ?>">Get the Skeleton App</a></li>
-                        <li><a href="http://modules.zendframework.com" target="_blank">Find modules for your application</a></li>
+                        <li><a href="<?php echo $this->url('downloads') ?>">下载</a></li>
+                        <li><a href="<?php echo $this->url('downloads', array('action' => 'skeleton-app')) ?>">获取核心程序</a></li>
+                        <li><a href="http://modules.zendframework.com" target="_blank">获取应用模块</a></li>
                     </ul>
                 </div>
 
                 <div class="two mobile-two columns">
-                    <h4>Participate</h4>
+                    <h4>参与</h4>
                     <ul>
-                        <li><a href="<?php echo $this->url('participate') ?>">Overview</a></li>
-                        <li><a href="<?php echo $this->url('participate/contribute') ?>">Contributors Guide</a></li>
+                        <li><a href="<?php echo $this->url('participate') ?>">概述</a></li>
+                        <li><a href="<?php echo $this->url('participate/contribute') ?>">投稿向导</a></li>
                         <?php // <li><a href="">User Groups</a></li> ?>
-                        <li><a href="<?php echo $this->url('participate/blogs') ?>">Blogs</a></li>
+                        <li><a href="<?php echo $this->url('participate/blogs') ?>">博客</a></li>
                         <?php // <li><a href="">Contributors</a></li> ?>
                     </ul>
                 </div>
 
                 <div class="two mobile-four columns offset-by-two" id="contact-menu">
-                    <h4>Contact Us</h4>
+                    <h4>联系我们</h4>
                     <ul>
-                        <li><a href="<?php echo $this->url('contact')  ?>">form</a></li>
-                        <li><a href="<?php echo $this->url('archives') ?>">mailing lists</a></li>
+                        <li><a href="<?php echo $this->url('contact')  ?>">网站表格</a></li>
+                        <li><a href="<?php echo $this->url('archives') ?>">邮件列表</a></li>
                         <li><a href="<?php echo $this->url('irc') ?>">IRC</a></li>
                     </ul>
                 </div>
@@ -193,7 +193,7 @@ if ($this->bodyId) {
             </div>
 
             <div id="footer-copyright" class="row">
-                <p>&copy; 2006 - <?php echo date('Y') ?> by Zend Technologies Ltd. All rights reserved.</p>
+                <p>&copy; 2006 - <?php echo date('Y') ?> Zend科技有限公司版权所有.</p>
                 <a href="#header" id="to_top">
                     <img src="<?php echo $this->basePath('images/arrow.png') ?>" width="22" height="20" alt="" title="back to top">
                 </a>
