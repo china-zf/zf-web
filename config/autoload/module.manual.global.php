@@ -15,7 +15,7 @@ $paths         = array();
 
 $zf2ManualPath = '/opt/web/zf-web/zf2-documentation/docs/_build/html/';
 $zf2versions    = include __DIR__ . '/zf2-manual-versions.php';
-$zf2langs       = array('en');
+$zf2langs       = array('en', 'zh');
 foreach ($zf2versions as $version) {
     $paths[$version] = array();
     foreach ($zf2langs as $lang) {
