@@ -1,23 +1,26 @@
 <?php
 $paths         = array();
-$zf1ManualPath = '/var/local/framework/ZendFramework-%s/documentation/manual/core/%s/';
-$zf1langs      = array('en', 'de', 'fr', 'ru', 'ja', 'zh');
-$zf1versions   = include __DIR__ . '/zf1-manual-versions.php';
+//$zf1ManualPath = '/var/local/framework/ZendFramework-%s/documentation/manual/core/%s/';
+//$zf1langs      = array('en', 'de', 'fr', 'ru', 'ja', 'zh');
+//$zf1versions   = include __DIR__ . '/zf1-manual-versions.php';
+//
+//foreach ($zf1versions as $minorVersion => $specificVersion) {
+//    $paths[$minorVersion] = array();
+//    foreach ($zf1langs as $lang) {
+//        $paths[$minorVersion][$lang] = sprintf($zf1ManualPath, $specificVersion, $lang);
+//    }
+//}
 
-foreach ($zf1versions as $minorVersion => $specificVersion) {
-    $paths[$minorVersion] = array();
-    foreach ($zf1langs as $lang) {
-        $paths[$minorVersion][$lang] = sprintf($zf1ManualPath, $specificVersion, $lang);
-    }
-}
+//$zf2ManualPath = '/var/local/framework/ZendFramework-%s/manual/%s/'
 
-$zf2ManualPath = '/var/local/framework/ZendFramework-%s/manual/%s/';
+$zf2ManualPath = '/opt/web/zf-web/zf2-documentation/docs/_build/html/'
 $zf2versions    = include __DIR__ . '/zf2-manual-versions.php';
 $zf2langs       = array('en');
 foreach ($zf2versions as $version) {
     $paths[$version] = array();
     foreach ($zf2langs as $lang) {
-        $paths[$version][$lang] = sprintf($zf2ManualPath, $version, $lang);
+        //$paths[$version][$lang] = sprintf($zf2ManualPath, $version, $lang);
+        $paths[$version][$lang] = $zf2ManualPath;
     }
 }
 
