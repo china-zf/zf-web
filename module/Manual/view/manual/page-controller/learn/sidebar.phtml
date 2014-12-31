@@ -5,23 +5,23 @@ $this->layout()->active = 'learn';
 $this->placeholder('sidebar')->captureStart(); ?>
 <ul>
     <li<?php echo ($this->active == 'overview' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->url('learn') ?>">Overview</a>
+        <a href="<?php echo $this->url('learn') ?>">概述</a>
     </li>
     <li<?php echo ($this->active == 'training-and-certification' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->url('learn/training-and-certification') ?>">Training &amp; Certification</a>
+        <a href="<?php echo $this->url('learn/training-and-certification') ?>">培训与认证</a>
     </li>
     <li<?php echo ($this->active == 'support-and-consulting' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->url('learn/support-and-consulting') ?>">Support &amp; Consulting</a>
+        <a href="<?php echo $this->url('learn/support-and-consulting') ?>">支持与咨询</a>
     </li>
 </ul>
 
 <h1>Zend Framework 2</h1>
 <ul>
     <li>
-        <a href="<?php echo $this->basePath('manual/2.3/en/user-guide/overview.html') ?>">Getting started</a>
+        <a href="<?php echo $this->basePath('manual/2.3/en/user-guide/overview.html') ?>">入门</a>
     </li>
     <li>
-        <a href="<?php echo $this->basePath('manual/2.3/en/index.html') ?>">Reference Guide</a>
+        <a href="<?php echo $this->basePath('manual/2.3/en/index.html') ?>">参考指南</a>
     </li>
     <li<?php echo ($this->active == 'api' ? ' class="active"' : '') ?>>
         <a href="<?php echo $this->basePath('docs/api#zf2') ?>">API</a>
@@ -31,10 +31,10 @@ $this->placeholder('sidebar')->captureStart(); ?>
 <h1>Zend Framework 1</h1>
 <ul>
     <li>
-        <a href="<?php echo $this->basePath('manual/1.12/en/learning.quickstart.html') ?>">Getting started</a>
+        <a href="<?php echo $this->basePath('manual/1.12/en/learning.quickstart.html') ?>">入门</a>
     </li>
     <li>
-        <a href="<?php echo $this->basePath('manual/1.12/en/manual.html') ?>">Reference Guide</a>
+        <a href="<?php echo $this->basePath('manual/1.12/en/manual.html') ?>">参考指南</a>
     </li>
     <li<?php echo ($this->active == 'api' ? ' class="active"' : '') ?>>
         <a href="<?php echo $this->basePath('docs/api#zf1') ?>">API</a>
@@ -45,22 +45,22 @@ $this->placeholder('sidebar')->captureStart(); ?>
     <?php echo $this->render('trainingads') ?>
 </div>
 
-<h1>More info <small>(external)</small></h1>
+<h1>更多信息 <small>(外部)</small></h1>
 <ul>
     <li>
-        <a href="http://www.zend.com/en/resources/webinars/framework" title="go to zend.com">Webinars</a>
+        <a href="http://www.zend.com/en/resources/webinars/framework" title="go to zend.com">在线研讨会</a>
     </li>
     <li>
-        <a href="http://www.zend.com/en/services/training/training-bundles?src=ZFsite" title="go to zend.com">Training</a>
+        <a href="http://www.zend.com/en/services/training/training-bundles?src=ZFsite" title="go to zend.com">培训</a>
     </li>
     <li>
-        <a href="http://www.zend.com/en/services/certification/" title="go to zend.com">Certification</a>
+        <a href="http://www.zend.com/en/services/certification/" title="go to zend.com">认证</a>
     </li>
     <li>
-        <a href="http://www.zend.com/server" title="go to zend.com">Support</a>
+        <a href="http://www.zend.com/server" title="go to zend.com">支持</a>
     </li>
     <li>
-        <a href="http://www.zend.com/en/services/consulting/" title="go to zend.com">Consulting</a>
+        <a href="http://www.zend.com/en/services/consulting/" title="go to zend.com">咨询</a>
     </li>
 </ul>
 <?php $this->placeholder('sidebar')->captureEnd(); ?>
