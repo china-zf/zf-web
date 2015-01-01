@@ -2,8 +2,8 @@
 $this->render('downloads/downloads/sidebar', array('active' => 'latest'));
 
 $headTitle = $this->headTitle();
-$headTitle->prepend('Downloads');
-$headTitle->prepend('Latest');
+$headTitle->prepend('下载');
+$headTitle->prepend('获取最新版本');
 
 $zf2Version = $this->releases->getCurrentStableVersion(2);
 $zf2Date    = $this->releases->getReleaseDate($zf2Version);
