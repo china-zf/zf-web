@@ -1,15 +1,15 @@
 <?php
 $paths         = array();
-//$zf1ManualPath = '/var/local/framework/ZendFramework-%s/documentation/manual/core/%s/';
-//$zf1langs      = array('en', 'de', 'fr', 'ru', 'ja', 'zh');
-//$zf1versions   = include __DIR__ . '/zf1-manual-versions.php';
-//
-//foreach ($zf1versions as $minorVersion => $specificVersion) {
-//    $paths[$minorVersion] = array();
-//    foreach ($zf1langs as $lang) {
-//        $paths[$minorVersion][$lang] = sprintf($zf1ManualPath, $specificVersion, $lang);
-//    }
-//}
+$zf1ManualPath = '/var/local/framework/ZendFramework-%s/documentation/manual/core/%s/';
+$zf1langs      = array('en', 'de', 'fr', 'ru', 'ja', 'zh');
+$zf1versions   = include __DIR__ . '/zf1-manual-versions.php';
+
+foreach ($zf1versions as $minorVersion => $specificVersion) {
+    $paths[$minorVersion] = array();
+    foreach ($zf1langs as $lang) {
+        $paths[$minorVersion][$lang] = sprintf($zf1ManualPath, $specificVersion, $lang);
+    }
+}
 
 //$zf2ManualPath = '/var/local/framework/ZendFramework-%s/manual/%s/'
 
