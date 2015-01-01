@@ -5,32 +5,26 @@ $this->layout()->bodyId = 'downloads';
 $this->placeholder('sidebar')->captureStart(); ?>
 <ul>
     <li<?php echo ($this->active == 'overview' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->url('downloads') ?>">Overview</a>
+        <a href="<?php echo $this->url('downloads') ?>">概述</a>
     </li>
     <li<?php echo ($this->active == 'latest' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->url('downloads', array('action' => 'latest')) ?>">Latest Releases</a>
+        <a href="<?php echo $this->url('downloads', array('action' => 'latest')) ?>">最新版本</a>
     </li>
     <li<?php echo ($this->active == 'composer' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->url('downloads', array('action' => 'composer')) ?>">Use Composer</a>
+        <a href="<?php echo $this->url('downloads', array('action' => 'composer')) ?>">使用Composer</a>
     </li>
     <li<?php echo ($this->active == 'pyrus' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->url('downloads', array('action' => 'pyrus')) ?>">Use Pyrus</a>
+        <a href="<?php echo $this->url('downloads', array('action' => 'pyrus')) ?>">使用Pyrus</a>
     </li>
     <li<?php echo ($this->active == 'skeleton-app' ? ' class="active"' : '') ?>>
         <a href="<?php echo $this->url('downloads', array('action' => 'skeleton-app')) ?>">
-            Get the Skeleton Application
+            获取核心应用程序
         </a>
     </li>
     <li<?php echo ($this->active == 'archives' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->url('downloads', array('action' => 'archives')) ?>">Archives</a>
+        <a href="<?php echo $this->url('downloads', array('action' => 'archives')) ?>">历史版本</a>
     </li>
 </ul>
 
-<div>
-    <a href="http://shop.zend.com/en/zend-server-developer-standard.html">
-        <img src="<?php echo $this->basePath('/images/Zend-Server-AD-285x367px.png') ?>"
-            alt="Zend Server Promo">
-    </a>
-</div>
 <?php $this->placeholder('sidebar')->captureEnd(); ?>
 

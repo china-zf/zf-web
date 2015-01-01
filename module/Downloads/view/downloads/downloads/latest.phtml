@@ -11,44 +11,17 @@ $zf2Date    = $this->releases->getReleaseDate($zf2Version);
 $zf1Version = $this->releases->getCurrentStableVersion(1);
 $zf1Date    = $this->releases->getReleaseDate($zf1Version);
 ?>
-<h1>Latest Releases</h1>
+<h1>最新版本</h1>
 
 <ul class="button-group">
-    <li><a href="#ZF2" class="button">ZF2 Releases</a></li>
-    <li><a href="#ZF1" class="button">ZF1 Releases</a></li>
+    <li><a href="#ZF2" class="button">ZF2版本</a></li>
+    <li><a href="#ZF1" class="button">ZF1版本</a></li>
 </ul>
 
 <p>
-    Latest releases can always be found on this page.
+   所有的最新版本都可以在这里找到.
 </p>
 
-<div class="server-download">
-    <div class="zend-blocks">
-        <img src="<?php echo $this->basePath('images/ZF-Server-boxes-120x185px.png') ?>">
-    </div>
-
-    <div class="server-content">
-        Try <span class="product">Zend Framework</span> with
-        <nobr><span class="product">Z-Ray</span></nobr><br>
-        in the <span class="promo">30-day Trial Edition</span> of
-
-        <br>
-
-        <img class="server-logo"
-            src="<?php echo $this->basePath('images/Zend-Server-logo-368x51px.png') ?>"
-            alt="Zend Server">
-
-        <br>
-        an Enterprise-ready PHP Application Stack
-
-        <br>
-
-        <a href="http://www.zend.com/en/products/server/downloads-beta?utm_source=zfd">
-            <img src="<?php echo $this->basePath('images/Try-Now-button-135x39px.png') ?>"
-                alt="Try Now">
-        </a>
-    </div>
-</div>
 
 <h2 id="ZF2">Zend Framework 2</h2>
 
@@ -59,17 +32,14 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
         </td>
 
         <td>
-            <h4>Zend Framework Full Package</h4>
+            <h4>Zend Framework全套软件包</h4>
             <p>
-                Download the latest full release from the high-speed zend.com 
-                Content Delivery Network (CDN). Contains Zend Framework and all 
-                demos. Start here if you don't have a preference. (Requires 
-                registration)
+                如何你没有特殊的偏好使用CDN网络下载最新的软件包,包含所有的演示.
             </p>
         </td>
 
         <td class="omega">
-            <a href="http://www.zend.com/company/community/framework/downloads" class="small button">Free Download</a>
+            <a href="http://www.zend.com/company/community/framework/downloads" class="small button">免费下载</a>
         </td>
     </tr>
 
@@ -77,13 +47,13 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
         <td class="alpha">&nbsp;</td>
 
         <td>
-            <h4>Zend Framework <?php echo $zf2Version ?> Full</h4>
-            <p>Released <?php echo $zf2Date ?></p>
+            <h4>Zend Framework <?php echo $zf2Version ?> 完整版本</h4>
+            <p>发布时间 <?php echo $zf2Date ?></p>
         </td>
 
         <td class="omega">
             <div href="#" class="small button dropdown">
-                Download
+                下载
                 <ul>
                     <li>
                         <a href="<?php echo $this->releases->getArchive($zf2Version, 'zip') ?>">zip</a>
@@ -100,14 +70,14 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
         <td class="alpha">&nbsp;</td>
 
         <td>
-            <h4>Zend Framework <?php echo $zf2Version ?> Documentation</h4>
-            <p>Released <?php echo $zf2Date ?></p>
+            <h4>Zend Framework <?php echo $zf2Version ?> 文档</h4>
+            <p>发布时间 <?php echo $zf2Date ?></p>
         </td>
 
         <td class="omega">
 
             <div href="#" class="small button dropdown">
-                Download
+                下载
                 <ul>
                     <li>
                         <a href="<?php echo $this->url('learn', array(
@@ -139,14 +109,13 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
 </table>
 
 <p>
-    You may also install Zend Framework 2, as a whole or as individual
-    components, via <a href="<?php echo $this->url(
+    你也可以通过<a href="<?php echo $this->url(
         'downloads',
         array('action' => 'composer')
-    ); ?>">Composer</a> or <a href="<?php echo $this->url(
+    ); ?>">Composer</a> 或者 <a href="<?php echo $this->url(
         'downloads',
         array('action' => 'pyrus')
-    ); ?>">Pyrus</a>.
+    ); ?>">Pyrus</a>安装Zend Framework 2或者部分组件.
 </p>
 
 <h2 id="ZF1">Zend Framework 1</h2>
@@ -158,17 +127,14 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
         </td>
 
         <td>
-            <h4>Zend Framework Full Package</h4>
+            <h4>Zend Framework完整软件包</h4>
             <p>
-                Download the latest releases from the high-speed zend.com 
-                Content Delivery Network (CDN). Contains Zend Framework and all 
-                demos. Start here if you don't have a preference. (Requires 
-                registration)
+                如何你没有特殊的偏好使用CDN网络下载最新的软件包,包含所有的演示.
             </p>
         </td>
 
         <td class="omega">
-            <a href="http://www.zend.com/company/community/framework/downloads" class="small button">Free Download</a>
+            <a href="http://www.zend.com/company/community/framework/downloads" class="small button">免费下载</a>
         </td>
     </tr>
 
@@ -176,13 +142,13 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
         <td class="alpha">&nbsp;</td>
 
         <td>
-            <h4>Zend Framework <?php echo $zf1Version ?> Full</h4>
-            <p>Released <?php echo $zf1Date ?></p>
+            <h4>Zend Framework <?php echo $zf1Version ?> 完整软件包</h4>
+            <p>发布时间 <?php echo $zf1Date ?></p>
         </td>
 
         <td class="omega">
             <div href="#" class="small button dropdown">
-                Download
+                下载
                 <ul>
                     <li>
                         <a href="<?php echo $this->releases->getArchive($zf1Version, 'zip') ?>">zip</a>
@@ -199,13 +165,13 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
         <td class="alpha">&nbsp;</td>
 
         <td>
-            <h4>Zend Framework <?php echo $zf1Version ?> Minimal</h4>
-            <p>Released <?php echo $zf1Date ?></p>
+            <h4>Zend Framework <?php echo $zf1Version ?> 最小版本</h4>
+            <p>发布时间 <?php echo $zf1Date ?></p>
         </td>
 
         <td class="omega">
             <div href="#" class="small button dropdown">
-                Download
+                下载
                 <ul>
                     <li>
                         <a href="<?php echo $this->releases->getMinimalArchive($zf1Version, 'zip') ?>">zip</a>
@@ -222,13 +188,13 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
         <td class="alpha">&nbsp;</td>
 
         <td>
-            <h4>Zend Framework <?php echo $zf1Version ?> Documentation</h4>
-            <p>Released <?php echo $zf1Date ?></p>
+            <h4>Zend Framework <?php echo $zf1Version ?> 文档</h4>
+            <p>发布时间 <?php echo $zf1Date ?></p>
         </td>
 
         <td class="omega">
             <div href="#" class="small button dropdown">
-                Download
+                下载
                 <ul>
                     <li>
                         <a href="<?php echo $this->url('learn', array(
@@ -251,13 +217,10 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
     </tr>
 </table>
 
-<h2>Other Downloads</h2>
+<h2>其他下载</h2>
 
 <p>
-    Zend Framework version 1 offers a limited number of standalone
-    component as well. Each of the archives linked below contain all
-    necessary code to run the component, as well as all tests, end-user
-    documentation, and API documentation.
+    ZF1框架有少量的独立组建,每个链接的软件包里面包含软件代码,文档,测试,api等.
 </p>
 
 <table class="twelve">
@@ -266,28 +229,27 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
             <h4>Zend_Gdata</h4>
 
             <p>
-                Version <?php
+                版本 <?php
                     $gdataVersion = $this->releases->getCurrentStableProductVersion('gdata');
                     echo $gdataVersion;
                 ?>;<br />
-                released <?php echo $this->releases->getReleaseDate($gdataVersion) ?>
+                发布日期 <?php echo $this->releases->getReleaseDate($gdataVersion) ?>
             </p>
 
         </td>
 
         <td>
             <p>
-                The Google Data APIs are a set of web services for read/write
-                access to applications hosted by Google. Zend_Gdata provides
-                PHP 5 client interfaces for the Google Data APIs. See the
+                Zend_Gdata提供了一套基于PHP5实现的谷歌数据读写访问谷歌服务器接口
+                要想了解更多,请访问
                 <a href="http://code.google.com/apis/gdata/index.html">Google
-                GData site</a> for more information.
+                GData site</a>.
             </p>
         </td>
 
         <td class="omega">
             <div href="#" class="small button dropdown">
-                Download
+                下载
                 <ul>
                     <li>
                         <a href="<?php echo $this->releases->getProductArchive(
@@ -313,21 +275,18 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
             <h4>Zend_InfoCard</h4>
 
             <p>
-                Version <?php
+                版本 <?php
                     $infocardVersion = $this->releases->getCurrentStableProductVersion('infocard');
                     echo $infocardVersion;
                 ?>;<br />
-                released <?php echo $this->releases->getReleaseDate($infocardVersion) ?>
+                发布日期 <?php echo $this->releases->getReleaseDate($infocardVersion) ?>
             </p>
 
         </td>
 
         <td>
             <p>
-                Microsoft and Zend Technologies have made a commitment to
-                deliver information card support to PHP developers, which
-                will reduce development costs and help make the Web safer
-                and more secure.
+                微软和Zend提供信用卡技术支持,这将降低开发成本,使得网络更加安全.
             </p>
 
             <p>
@@ -351,7 +310,7 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
 
         <td class="omega">
             <div href="#" class="small button dropdown">
-                Download
+                下载
                 <ul>
                     <li>
                         <a href="<?php echo $this->releases->getProductArchive(
@@ -377,11 +336,11 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
             <h4>Zend_AMF</h4>
 
             <p>
-                Version <?php
+                版本 <?php
                     $amfVersion = $this->releases->getCurrentStableProductVersion('amf');
                     echo $amfVersion;
                 ?>;<br />
-                released <?php echo $this->releases->getReleaseDate($amfVersion) ?>
+                发布日期 <?php echo $this->releases->getReleaseDate($amfVersion) ?>
             </p>
 
         </td>
@@ -399,7 +358,7 @@ $zf1Date    = $this->releases->getReleaseDate($zf1Version);
 
         <td class="omega">
             <div href="#" class="small button dropdown">
-                Download
+                下载
                 <ul>
                     <li>
                         <a href="<?php echo $this->releases->getProductArchive(

@@ -5,19 +5,15 @@ $headTitle = $this->headTitle();
 $headTitle->prepend('Downloads');
 $headTitle->prepend('Composer');
 ?>
-<h1>Using Composer</h1>
+<h1>使用Composer</h1>
 
 <p>
-    Starting with Zend Framework 2, you may now install Zend Framework or
-    any of its individual components and their dependencies, using
-    the dependency management tool <a href="http://getcomposer.org/">Composer</a>.
-    Packages are provided by our dedicated packages repository at
-    <a href="https://packages.zendframework.com/">packages.zendframework.com</a>.
+    入门Zend Framework 2, 你可以使用<a href="http://getcomposer.org/">Composer</a>安装相关的软件以及依赖软件包.
+    包是由我们的<a href="https://packages.zendframework.com/">packages.zendframework.com</a>管理.
 </p>
 
 <p>
-    To use our packages with Composer, add the following to your
-    <code>composer.json</code> to enable our repository:
+    利用Composer使用我们的软件包, 添加相关的库信息到<code>composer.json</code>中即可:
 </p>
 
 <pre class="highlight javascript"><code>"repositories": [
@@ -28,8 +24,7 @@ $headTitle->prepend('Composer');
 ],</code></pre>
 
 <p>
-    You can then add any of our packages to your require list. For
-    example:
+    你可以添加任何你需要的软件包到你的列表,例如:
 </p>
 
 <pre class="highlight javascript"><code>"require": {
@@ -38,12 +33,12 @@ $headTitle->prepend('Composer');
 },</code></pre>
 
 <p>
-    Run the install command to resolve and download the dependencies:
+    运行安装命令下载依赖包:
 </p>
 
 <pre class="highlight bash"><code>php composer.phar install</code></pre>
 
-<h2>Available Packages</h2>
+<h2>可以用的软件包</h2>
     
 <ul class="block-grid two-up mobile">
     <li>zendframework/zend-authentication</li>

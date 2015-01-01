@@ -3,116 +3,97 @@ $this->render('downloads/downloads/sidebar', array('active' => 'overview'));
 
 $this->headTitle()->prepend('Downloads');
 ?>
-<h1>Downloads</h1>
+<h1>下载</h1>
 
-<h2>Latest Releases</h2>
+<h2>最新版本</h2>
 
 <p>
-    If you are looking for the latest production versions of Zend
-    Framework, either from the 1.X or 2.X series, they can be found in the
-    <a href="<?php echo $this->url('downloads', array('action' => 'latest')) ?>">latest release
-    section</a>.
+    如果你在查找最新稳定版本Zend Framework,
+    这里可以找到任何一个 1.X 或者 2.X的<a href="<?php echo $this->url('downloads', array('action' => 'latest')) ?>">最新版本</a>.
 </p>
 
 <p>
-    We package several Zend Framework downloads for your convenience,
-    and provided the latest versions on Zend's high-speed content
-    distribution network (registration required). Please download content
-    from the CDN where possible. With the greater bandwidth, you'll get
-    your files sooner and we'll have more bandwidth for serving the ZF
-    website on the Zend Framework servers.
+    为了下载方便, 我们设立CND网络, 提供了足够大的带宽服务.
 </p>
 
 <p>
-    All compressed archives are available in both zip (.zip) and tarball
-    (.tar.gz) formats.
+    所有的版本提供zip(.zip)以及tarball(.tar.gz)两种压缩包下载.
 </p>
 
-<h2>Download ZF2 documentation files</h2>
+<h2>下载ZF2文档文件</h2>
 
 <p>
-    Want to read documentation with your portable devices?
+    你想使用便携设备读取文档?
 </p>
 
 <ul class="button-group">
-    <li><a href="https://packages.zendframework.com/releases/ZendFramework-2.3.3/ZendFramework-2.3.3-manual-en.pdf" class="button">Download latest PDF</a></li>
-    <li><a href="https://packages.zendframework.com/releases/ZendFramework-2.3.3/ZendFramework-2.3.3-manual-en.epub" class="button">Download latest EPUB</a></li>
+    <li><a href="https://packages.zendframework.com/releases/ZendFramework-2.3.3/ZendFramework-2.3.3-manual-en.pdf" class="button">下载最新PDF</a></li>
+    <li><a href="https://packages.zendframework.com/releases/ZendFramework-2.3.3/ZendFramework-2.3.3-manual-en.epub" class="button">下载最新EPUB</a></li>
 </ul>
 
-<h2>Use Composer or Pyrus</h2>
+<h2>使用Composer或者Pyrus</h2>
 
 <p>
-    Starting with Zend Framework 2, Zend Framework or any of its individual
-    components may be installed via either <a href="<?php echo $this->url('downloads', array('action' => 'composer')) ?>">Composer</a>
-    or <a href="<?php echo $this->url('downloads', array('action' => 'pyrus')) ?>">Pyrus</a>
+    入门Zend Framework2,我们开始学习使用<a href="<?php echo $this->url('downloads', array('action' => 'composer')) ?>">Composer</a>或者
+    <a href="<?php echo $this->url('downloads', array('action' => 'pyrus')) ?>">Pyrus</a>
+    安装软件包或者整个框架程序.
 </p>
 
-<h2>Get the Skeleton Application</h2>
+<h2>获取核心程序</h2>
 
 <p>
-    We provide a skeleton application for Zend Framework 2 to simplify
-    the process of getting started. It provides the recommended directory
-    structure, sample configuration files, and dependencies via either
-    git submodules or <a href="http://getcomposer.org/">Composer</a>.
+    我们提供了一个简化的ZF2项目程序,他提供了推荐的目录结构,配置文件,你可以通过<a href="http://getcomposer.org/">Composer</a>
+    解决它的依赖关系.
 </p>
 
 <p>
-    <a href="<?php echo $this->url('downloads', array('action' => 'skeleton-app')) ?>">Get started
-    with the skeleton application now!</a>
+    <a href="<?php echo $this->url('downloads', array('action' => 'skeleton-app')) ?>">马上获取核心程序!</a>
 </p>
 
 <h2>Git (Zend Framework 2.X)</h2>
 
 <p>
-    We develop Zend Framework 2 using <a href="http://git-scm.org/">Git</a>,
-    and host our repository on <a href="http://github.com/">GitHub</a>. If
-    you are interested in a source distribution, please fork <a
-    href="https://github.com/zendframework/zf2">our repository on
-    GitHub</a>.
+    我们使用<a href="http://git-scm.org/">Git</a>开发Zend Framework2框架,如果你对源程序感兴趣, 你可以fork<a
+        href="https://github.com/zendframework/zf2">我们在github的项目库</a>
 </p>
 
 <h2>Subversion (Zend Framework 1.X)</h2>
 
 <p>
-    If you would like to check out Zend Framework 1.X from our Subversion
-    repository, please refer to our <a
-    href="http://framework.zend.com/wiki/display/ZFDEV/Subversion+Standards">Subversion
-    Standards for instructions</a>.
+    如果你想通过svn获取ZF1, 请访问<a
+        href="http://framework.zend.com/wiki/display/ZFDEV/Subversion+Standards">svn说明</a>.
 </p>
 
-<h2>Partner Downloads</h2>
+<h2>合作下载</h2>
 
 <p>
-    The latest releases and archives of the following partner libraries
-    are included in our downloads listings.
+    最新版本的合作Zend组件下载.
 </p>
 
 <dl>
-    <dt>Google Data API Library (Zend Framework 1.X)</dt>
+    <dt>谷歌数据API库 (Zend Framework 1.X)</dt>
     <dd>
-        As a Zend Framework technology partner, Google provides PHP 5
-        client libraries for accessing many of its popular services, such as YouTube,
-        Picasa, and Blogger, through its Google Data APIs.
+        Zend_Gdata提供了一套基于PHP5实现的谷歌数据读写访问谷歌服务器接口,例如YouTube,Picasa,Blogger.
     </dd>
 
-    <dt>Microsoft InfoCard Library (Zend Framework 1.X)</dt>
+    <dt>微软信用卡库 (Zend Framework 1.X)</dt>
     <dd>
         Microsoft has partnered with Zend Technologies to bring support for
         Windows Cardspace and other InfoCard technologies to PHP 5 applications.
     </dd>
 
-    <dt>Adobe AMF Library (Zend Framework 1.X)</dt>
+    <dt>Adobe AMF库 (Zend Framework 1.X)</dt>
     <dd>
         Adobe has contributed support for Action Message Format (AMF0 and
         AMF3) to Zend Framework.
     </dd>
 </dl>
 
-<h2>Archives</h2>
+<h2>历史下载</h2>
 
 <p>
     We've made every public release of Zend Framework, including the
     partner products, <a href="<?php echo $this->url('downloads', array('action' => 'archives'))
-?>">available for download</a>.
+    ?>">available for download</a>.
 </p>
 
