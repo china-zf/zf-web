@@ -1,25 +1,25 @@
 <?php $this->placeholder('sidebar')->captureStart(); ?>
 <ul>
     <li<?php echo ($this->active == 'participate' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->basePath('participate') ?>">Overview</a>
+        <a href="<?php echo $this->basePath('participate') ?>">概述</a>
     </li>
     <li<?php echo ($this->active == 'contributor-guide' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->basePath('participate/contributor-guide') ?>">Contributor Guide</a>
+        <a href="<?php echo $this->basePath('participate/contributor-guide') ?>">投稿指南</a>
     </li>
     <li<?php echo ($this->active == 'conferences' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->basePath('participate/conferences') ?>">Conferences</a>
+        <a href="<?php echo $this->basePath('participate/conferences') ?>">讨论组</a>
     </li>
     <li<?php echo ($this->active == 'user-groups' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->basePath('participate/user-groups') ?>">User Groups</a>
+        <a href="<?php echo $this->basePath('participate/user-groups') ?>">用户组</a>
     </li>
     <li<?php echo ($this->active == 'blogs' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->basePath('participate/blogs') ?>">Blogs</a>
+        <a href="<?php echo $this->basePath('participate/blogs') ?>">相关博客</a>
     </li>
     <li<?php echo ($this->active == 'contributors' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->basePath('participate/contributors') ?>">Contributors</a>
+        <a href="<?php echo $this->basePath('participate/contributors') ?>">贡献者</a>
     </li>
     <li<?php echo ($this->active == 'logos' ? ' class="active"' : '') ?>>
-        <a href="<?php echo $this->basePath('participate/logos') ?>">Logos</a>
+        <a href="<?php echo $this->basePath('participate/logos') ?>">ZF徽标</a>
     </li>
 </ul>
 <?php $this->placeholder('sidebar')->captureEnd(); ?>

@@ -6,94 +6,80 @@ $headTitle = $this->headTitle();
 $headTitle->prepend('Participate');
 $headTitle->prepend('Contributor Guide');
 ?>
-<h1>Contributor Guide</h1>
+<h1>贡献指南</h1>
 
 <blockquote>
-    Have something you want to contribute back? Follow this helpful guide.
+    按照指导， 你要反馈些什么呢？
 </blockquote>
 
 <hr/>
 
 <p>
-    In the spirit of open-source software, you can contribute as little or
-    as much as you like: bug reports, patches, full components or
-    documentation are all equally appreciated.  The following section
-    describes contributing for Zend Framework version 2.
+    在这个开源软件， 你可以贡献很多：bug报告,补丁,完全或者部分文档。 以下部分描述了如何对Zend Framework2做出贡献。
 </p>
 
 <p class="panel">
-    If you are wanting to contribute back to version 1 of the framework,
-    please read
-    <a href="<?php echo $this->basePath('participate/contributor-guide-v1') ?>">"Zend Framework v1 Contributions"</a>.
+    如果你想贡献Zend Framwork1,请阅读:
+    <a href="<?php echo $this->basePath('participate/contributor-guide-v1') ?>">"Zend Framework v1贡献帮助"</a>.
 </p>
 
-<h2>So, You Want to File A Bug Report ... </h2>
+<h2>接下来，你要反馈错误报告？ </h2>
 
 <p>
-    So, you've found what you think might be a bug.  Before you file it,
-    we'd ask that you ensure that what you have is indeed a bug, by doing
-    a little due-diligence (which also is good information to add to the
-    bug report):
+    当你发现一些你可能认为是一个bug，我们会问，你为何确定这是一个bug,做一个小的调查（也就是将有用的信息添加到错误反馈）:
 </p>
 
 <ul>
-    <li>See if your use case is covered in the <a href="<?php echo $this->basePath('manual/2.0/en/index.html') ?>">manual</a></li>
-    <li>See if your use case is demonstrated by the <a href="/api/#">API docs.</a></li>
-    <li>Ask the <a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">mailing list</a> about your particular use case</li>
-    <li>Discuss your issue with someone in the IRC channel (see below)</li>
-    <li>Write a failing <a href="https://github.com/zendframework/zf2/tree/master/tests">test case</a></li>
+    <li>查看你的案例在<a href="<?php echo $this->basePath('manual/2.0/en/index.html') ?>">手册</a>中是否有涉及</li>
+    <li>查看你案例在<a href="/api/#">API文档</a>中的说明</li>
+    <li>发送你特定的案例到<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">邮件列表</a>。</li>
+    <li>在在线聊天室讨论你的问题(见下文)</li>
+    <li>写一个描述失败的<a href="https://github.com/zendframework/zf2/tree/master/tests">测试用例</a></li>
 </ul>
 
 <p>
     <img src="<?php echo $this->basePath('images/participate/icon_issue.gif') ?>" align="right" />
-    You don't have to do all of those, but by doing a few of them, it helps
-    ensure that your bug report is complete and will get tended to.  When
-    you're finally ready, go to our <a href="https://github.com/zendframework/zf2/issues">issue tracker for
-    ZF2</a>.
+    你不一定要全部做这些，你可以制作部分，这有助于BUG顺利得到解决。当你准备了可以去我们的
+    <a href="https://github.com/zendframework/zf2/issues">ZF2问题跟踪</a>.
 </p>
 
-<h2>So, You Want to Contribute Code ... </h2>
+<h2>接下来, 你可以贡献代码了 </h2>
 
 <p>
-    By and large, this framework is built and maintained by the community.
-    This means that process for submitting something back, be it a patch,
-    some documentation, or new feature requires some level of community
-    interactions.  As you can see with the "Fork Me On Github" banner on
-    the top right of this page, we proudly host our code on
-    <a href="http://github.com/zendframework/zf2/">github.com</a>.
+    总的来说，这个框架是由社区维护。这意味着，提交过来的东西，无论是补丁，文档那个，或者新的功能需要得到社区人员一定的互动。
+    你可以在我们的右上角fork我们在<a href="http://github.com/zendframework/zf2/">github</a>的代码。
 </p>
 
 <p>
-    If you're not already familar with git or github, take a moment to
-    read through our <a href="https://github.com/zendframework/zf2/blob/master/README-GIT.md">README-GIT.md</a>.
-    Committing code is easy:
+    如果你没有接触过git,github,请花一定的时间阅读 <a href="https://github.com/zendframework/zf2/blob/master/README-GIT.md">README-GIT.md</a>.
+    提交代码就是这么简单：
 </p>
 
 <ol>
-    <li><b>Fork</b> the <a href="https://github.com/zendframework/zf2">zf2 project</a></li>
+    <li><b>Fork</b><a href="https://github.com/zendframework/zf2">zf2项目</a></li>
 
-    <li>Create a local development <b>Branch</b> for the bugfix.</li>
+    <li>为bug创建本地开发<b>分支</b>.</li>
 
-    <li><b>Commit</b> a change and <b>push</b> your local branch to your github fork.</li>
+    <li><b>提交</b> 改变，并 <b>推送</b> 你的本地分支到你的github fork</li>
 
-    <li>Send us a <b>pull request</b> for your changes to be included.</li>
+    <li>为你的提交发送一个<b>拉取请求</b>。</li>
 </ol>
 
-<h2>So, You Want to Hang-out With A Great Community ... </h2>
+<h2>接下来，你将出现在这个庞大的社区中</h2>
 
 <p>
-    ZFers, as they are called, hang out in a number of different places.
-    Offline hangouts:
+    ZF使用者, 将会出现在不同的地方.
+    离线去处:
 </p>
 
 <ul>
-    <li><a href="<?php echo $this->basePath('participate/user-groups') ?>">User Groups With ZF Community Members</a></li>
+    <li><a href="<?php echo $this->basePath('participate/user-groups') ?>">ZF用户组成员</a></li>
 
-    <li><a href="<?php echo $this->basePath('participate/conferences') ?>">Conferences With ZF Talks</a></li>
+    <li><a href="<?php echo $this->basePath('participate/conferences') ?>">ZF讨论组</a></li>
 </ul>
 
 <p>
-    Online, ZFers can be found (links to more information on how to connect):
+    在线, ZF用户你可以在这里发现 (详细信息请点击链接):
 </p>
 
 <ul>

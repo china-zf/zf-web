@@ -1,6 +1,6 @@
 <?php $this->placeholder('sidebar')->captureStart(); ?>
 <div id="select-version">
-    Select a version:
+    选择版本:
     <select>
         <?php foreach ($this->versions as $ver):
             $versionValue = $ver;
@@ -11,7 +11,7 @@
             <option
                 value="<?php echo $versionValue ?>"
                 <?php echo ($ver === $this->version) ? ' selected="selected"' : '' ?>>
-              Version <?php echo $ver ?>
+              版本 <?php echo $ver ?>
             </option>
         <?php endforeach; ?>
     </select>
@@ -35,7 +35,7 @@ $this->inlineScript()->captureEnd();
 
 <?php if (count($contentList)): ?>
     <div id="select-chapter">
-        Select chapter:
+        选择章节:
         <select>
             <?php foreach ($contentList as $headline => $items): ?>
 
