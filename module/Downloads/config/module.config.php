@@ -10,10 +10,6 @@ return array(
                 ),
                 'languages' => array(
                     'en',
-                    'de',
-                    'fr',
-                    'ja',
-                    'ru',
                     'zh',
                 ),
             ),
