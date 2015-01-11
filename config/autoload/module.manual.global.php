@@ -14,6 +14,8 @@ foreach ($zf1versions as $minorVersion => $specificVersion) {
 //$zf2ManualPath = '/var/local/framework/ZendFramework-%s/manual/%s/'
 
 $zf2ManualPath = '/opt/web/zf-web/zf2-documentation/docs/_build/html/';
+$zf2ManualPath = dirname(dirname(dirname(__DIR__))) . '/docs/zh/';
+//var_dump($zf2ManualPath);
 $zf2versions    = include __DIR__ . '/zf2-manual-versions.php';
 $zf2langs       = array('en', 'zh');
 foreach ($zf2versions as $version) {
