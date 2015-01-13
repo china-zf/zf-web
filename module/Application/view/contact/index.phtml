@@ -3,25 +3,21 @@ $this->render('page-controller/contact/sidebar', array('active' => 'contact'));
 
 $this->headTitle()->prepend('Contact'); 
 ?>
-<h1>Contact Us</h1>
+<h1>联系我们</h1>
 
-<p>We'd love to hear from you!</p>
+<p>我们很乐意听到你的建议!</p>
 
-<p>
-    For technical questions about Zend Framework, please search our
-    <a href="<?php echo $this->basePath('archives') ?>">archives</a>.
-    If your question or issue isn't addressed there, please consider
-    subscribing to one of <a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">our mailing lists</a>.
-    Your question will be answered much more quickly in one of these forums.
-    If you are looking for enterprise Zend Framework support, it is now
-    <a href="http://www.zend.com/en/services/support/zend-framework-support">available online</a>.
+<p>关于Zend框架的技术问题,请搜索我们的<a href="<?php echo $this->basePath('archives') ?>">档案</a>
+    如果你的问题或问题没有解决,请订阅我们的<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">邮件列表</a>之一.
+    你的问题将在其中的一个论坛回答要快得多。如果你正在寻找企业Zend框架的支持,<a href = "http://www.zend.com/en/services/support/zend-framework-support " >在线 </a>。
+
 </p>
 
 <?php if ($this->error): ?>
     <div class="alert-box alert">
         <p>
-            There were one or more isues with your submission. Please correct
-            them as indicated below.
+
+            有一个或多个服务主体与你提交。请纠正他们如下表示。
         </p>
     </div>
 <?php endif ?>
