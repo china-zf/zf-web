@@ -25,6 +25,7 @@ return array(
         'PhlyBlog',
         'PhlyContact',
         'ZfSiteBlog',
+       // 'Blog'
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => $globPaths,
