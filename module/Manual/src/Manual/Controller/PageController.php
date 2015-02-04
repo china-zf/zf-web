@@ -746,7 +746,7 @@ class PageController extends AbstractActionController
         /** @var \DOMNode $node */
         foreach ($elements as $node) {
             // Get TOC headline
-            if ($node->nodeValue == 'Table Of Contents') {
+            if ($node->nodeValue == 'Table Of Contents' || $node->nodeValue == '內容目录') {
                 // Add headline to sidebar
                 $pageContent['sidebar'] .= '<section id="toc">';
                 $pageContent['sidebar'] .= $node->ownerDocument->saveXML($node);
@@ -763,7 +763,7 @@ class PageController extends AbstractActionController
             }
 
             // Get "This Page" headline
-            if ($node->nodeValue == 'This Page') {
+            if ($node->nodeValue == 'This Page' || $node->nodeValue == '本页') {
                 // Add headline to sidebar
                 $pageContent['sidebar'] .= '<section id="this-page-menu">';
                 $pageContent['sidebar'] .= $node->ownerDocument->saveXML($node);
